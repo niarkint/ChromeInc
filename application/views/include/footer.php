@@ -27,6 +27,18 @@
 <script src="<?php echo base_url('assets/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
 <!-- ChartJS -->
 <script src="<?php echo base_url('assets/plugins/chart.js/Chart.min.js') ?>"></script>
+<?php 
+    if(!empty($extra_script)){
+        if(is_array($extra_script)){
+            foreach($extra_script as $script){
+                echo $script;
+            };
+        }
+        else{
+            echo $extra_script;
+        }
+    }
+?>
 <!-- Sparkline -->
 <script src="<?php echo base_url('assets/plugins/sparklines/sparkline.js') ?>"></script>
 <!-- JQVMap -->
@@ -77,7 +89,6 @@
     document.getElementById("total_harga").value = total_barang;
     $('html, body').animate({scrollTop: '0px'}, 0);
   }
-
 </script>
 </body>
 </html>
