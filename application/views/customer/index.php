@@ -8,11 +8,10 @@
 							<table id="datatable" class="table table-bordered table-hover">
 								<thead>
 									<tr>
-										<th>No</th>
+										<th>ID</th>
 										<th>Nama</th>
 										<th>No Telp</th>
 										<th>Alamat</th>
-										<th>Aksi</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -20,16 +19,14 @@
 									$no = 1;
 									foreach ($customer as $value): ?>
 										<tr>
+											<td><?php echo $value->id_customer?></td>
+
 											<td><?php echo $value->nama_customer?></td>
 
 											<td><?php echo $value->no_telp ?></td>
 
 											<td><?php echo $value->alamat ?></td>
 
-											<td>
-												<a href="<?php echo base_url("inventory/edit/{$value->nama_customer}") ?>"
-												class="btn btn-sm btn-success"><i class="fas fa-edit"></i> Riwayat</a>
-											</td>
 										</tr>
 									<?php 
 									$no++;

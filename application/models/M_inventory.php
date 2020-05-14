@@ -10,7 +10,7 @@ class M_inventory extends CI_Model {
 		if ($id == null) {
 			$query = $this->db->get($this->TABLE)->result();
 		}else {
-			$this->db->where('no_inv', $id);
+			$this->db->where('id_inventory', $id);
 			$query = $this->db->get($this->TABLE)->result();
 		}
 		return $query;
@@ -24,19 +24,19 @@ class M_inventory extends CI_Model {
 
 	public function update($id,$object)
 	{
-		$this->db->where('no_inv', $id);
+		$this->db->where('id_inventory', $id);
 		$query = $this->db->update($this->TABLE, $object);
 		return $query;
 	}
 
 	public function delete($id)
 	{
-		$this->db->where('no_inv', $id);
+		$this->db->where('id_inventory', $id);
 		$query = $this->db->delete($this->TABLE);
 		return $query;
 	}
 
 }
 
-/* End of file M_pegawai.php */
-/* Location: ./application/models/M_pegawai.php */
+/* End of file M_inventory.php */
+/* Location: ./application/models/M_inventory.php */

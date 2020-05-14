@@ -12,6 +12,7 @@
 							<table id="datatable" class="table table-bordered table-hover">
 								<thead>
 									<tr>
+										<th>Id</th>
 										<th>No Inventaris</th>
 										<th>Nama</th>
 										<th>Jumlah</th>
@@ -25,6 +26,7 @@
 									<?php 
 									foreach ($inventory as $value): ?>
 									<tr>
+										<td><?php echo $value->id_inventory ?></td>
 										<td><?php echo $value->no_inv ?></td>
 										<td><?php echo $value->nama_inv ?></td>
 										<td><?php echo $value->jumlah ?></td>

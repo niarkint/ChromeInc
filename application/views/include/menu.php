@@ -30,7 +30,7 @@
         <li class="nav-header">MASTER</li>
         <li <?php echo ($this->uri->segment(1) == "barang" ? 'class="nav-item has-treeview menu-open"' : 'class="nav-item has-treeview menu-close"') ?>>
           <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
+            <i class="nav-icon fas fa-table"></i>
             <p>
               Barang
               <i class="fas fa-angle-left right"></i>
@@ -53,26 +53,26 @@
         </li>
         <li class="nav-item">
           <a href="<?php echo base_url("pegawai") ?>" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
+            <i class="nav-icon fas fa-table"></i>
             <p>Pegawai</p>
           </a>
         </li>
         <li class="nav-item">
           <a href="<?php echo base_url("inventory") ?>" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
+            <i class="nav-icon fas fa-table"></i>
             <p>Inventory</p>
           </a>
         </li>
         <li class="nav-header">DATA</li>
         <li class="nav-item">
           <a href="<?php echo base_url("transaksi") ?>" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
+            <i class="nav-icon fas fa-book"></i>
             <p>Transaksi</p>
           </a>
         </li>
         <li class="nav-item">
           <a href="<?php echo base_url("customer") ?>" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
+            <i class="nav-icon fas fa-book"></i>
             <p>Customer</p>
           </a>
         </li>

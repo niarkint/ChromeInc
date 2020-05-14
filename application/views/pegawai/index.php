@@ -13,6 +13,7 @@
 								<thead>
 
 									<tr>
+										<th>Id</th>
 										<th>Nama</th>
 										<th>Jabatan</th>
 										<th>Username</th>
@@ -26,6 +27,7 @@
 									foreach ($pegawai as $value): ?>
 
 									<tr>
+										<td><?php echo $value->id_pegawai?></td>
 										<td><?php echo $value->nama_pegawai?></td>
 										<td><?php echo $value->jabatan ?></td>
 										<td><?php echo $value->username ?></td>

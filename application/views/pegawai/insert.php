@@ -8,6 +8,12 @@
 					<div class="card card-info">
 						<?php echo ($this->uri->segment(2) == "edit" ? form_open('pegawai/update/'.$this->uri->segment(3), 'class="form-horizontal"') : form_open('pegawai/save', 'class="form-horizontal"')); ?>
 						<div class="card-body">
+						<div class="form-group row">
+								<label for="id_pegawai" class="col-sm-2 col-form-label">Id</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" name="id_pegawai" id="id_pegawai" 
+									value="<?php echo (isset($pegawai[0]->id_pegawai) ? $pegawai[0]->id_pegawai : "") ?>">
+								</div>
 							<div class="form-group row">
 								<label for="nama_pegawai" class="col-sm-2 col-form-label">Nama</label>
 								<div class="col-sm-10">
