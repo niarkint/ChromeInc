@@ -29,7 +29,7 @@
 											<td><?php echo $value->id_pegawai ?></td>
 											<td><?php echo $value->status ?></td>
 											<td>
-												<a href="<?php echo base_url("detail_transaksi/cek/{$value->id_transaksi}") ?>" class="btn btn-sm btn-info"><i class="fas fa-edit"></i> Lihat Detail</a>
+												<a href="<?php echo base_url("detail_transaksi/index/{$value->id_transaksi}") ?>" class="btn btn-sm btn-info"><i class="fas fa-edit"></i> Lihat Detail</a>
 										</tr>
 									<?php 
 									$no++;

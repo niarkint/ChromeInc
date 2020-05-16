@@ -9,7 +9,7 @@
 						<?php echo ($this->uri->segment(2) == "edit" ? form_open('inventory/update/'.$this->uri->segment(3), 'class="form-horizontal"') : form_open('inventory/save', 'class="form-horizontal"')); ?>
 						<div class="card-body">
 						<div class="form-group row">
-								<label for="no_inv" class="col-sm-2 col-form-label">Id</label>
+								<label for="id_inventory" class="col-sm-2 col-form-label">Id</label>
 								<div class="col-sm-10">
 									<input type="text" class="form-control" name="id_inventory" id="id_inventory" 
 									value="<?php echo (isset($inventory[0]->id_inventory) ? $inventory[0]->id_inventory : "") ?>">

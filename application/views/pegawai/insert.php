@@ -14,6 +14,7 @@
 									<input type="text" class="form-control" name="id_pegawai" id="id_pegawai" 
 									value="<?php echo (isset($pegawai[0]->id_pegawai) ? $pegawai[0]->id_pegawai : "") ?>">
 								</div>
+								</div>
 							<div class="form-group row">
 								<label for="nama_pegawai" class="col-sm-2 col-form-label">Nama</label>
 								<div class="col-sm-10">

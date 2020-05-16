@@ -24,6 +24,7 @@ class C_inventory extends CI_Controller {
 
 	public function save()
 	{
+		$id_inventory = $this->input->post('id_inventory');
         $no_inv = $this->input->post('no_inv');
 		$nama_inv = $this->input->post('nama_inv');
 		$jumlah = $this->input->post('jumlah');
@@ -32,11 +33,12 @@ class C_inventory extends CI_Controller {
 		$keterangan = $this->input->post('keterangan');
 
 		$object = array(
+			'id_inventory' => $id_inventory,
             'no_inv' => $no_inv,
 			'nama_inv' => $nama_inv,
 			'jumlah' => $jumlah,
 			'satuan' => $satuan,
-			'harga_beli' => md5($harga_beli),
+			'harga_beli' => $harga_beli,
 			'keterangan' => $keterangan,
 		);
 
@@ -54,6 +56,7 @@ class C_inventory extends CI_Controller {
 
 	public function update($id)
 	{
+		$id_inventory = $this->input->post('id_inventory');
         $no_inv = $this->input->post('no_inv');
 		$nama_inv = $this->input->post('nama_inv');
 		$jumlah = $this->input->post('jumlah');
@@ -62,11 +65,12 @@ class C_inventory extends CI_Controller {
 		$keterangan = $this->input->post('keterangan');
 
 		$object = array(
+			'id_inventory' => $id_inventory,
             'no_inv' => $no_inv,
 			'nama_inv' => $nama_inv,
 			'jumlah' => $jumlah,
 			'satuan' => $satuan,
-			'harga_beli' => md5($harga_beli),
+			'harga_beli' => $harga_beli,
 			'keterangan' => $keterangan,
 		
 		);
@@ -88,5 +92,5 @@ class C_inventory extends CI_Controller {
 
 }
 
-/* End of file C_pegawai.php */
-/* Location: ./application/controllers/C_pegawai.php */
+/* End of file C_inventory.php */
+/* Location: ./application/controllers/C_inventory.php */

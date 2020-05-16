@@ -83,3 +83,5 @@ $route['barang/cek/(:any)'] = 'C_barang/cek/$1';
 $route['customer'] = 'C_customer';
 
 $route['transaksi'] = 'C_transaksi';
+
+$route['detail_transaksi'] = 'C_detail_transaksi';
